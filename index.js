@@ -96,6 +96,7 @@ exports.handler = skillBuilder
   .addRequestHandlers(
     LaunchRequestHandler,
     RecommendIntentHandler,
+    RecommendHandler,
     CancelAndStopIntentHandler,
     SessionEndedRequestHandler
   )
