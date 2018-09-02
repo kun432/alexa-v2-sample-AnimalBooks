@@ -5,7 +5,7 @@ const LaunchRequestHandler = {
     return handlerInput.requestEnvelope.request.type === 'LaunchRequest';
   },
   handle(handlerInput) {
-    const speechText = 'アレクサ、アニマルブックスのおすすめの商品を教えて、と声を変えてください。';
+    const speechText = 'アレクサ、アニマルブックスのおすすめの商品を教えて、と声をかけてください。';
     return handlerInput.responseBuilder
       .speak(speechText)
       .getResponse();
@@ -18,7 +18,7 @@ const HelpHandler = {
       && handlerInput.requestEnvelope.request.intent.name === 'AMAZON.HelpIntent';
   },
   handle(handlerInput) {
-    const speechText = 'アレクサ、アニマルブックスのおすすめの商品を教えて、と声を変えてください。';
+    const speechText = 'アレクサ、アニマルブックスのおすすめの商品を教えて、と声をかけてください。';
     return handlerInput.responseBuilder
       .speak(speechText)
       .getResponse();
